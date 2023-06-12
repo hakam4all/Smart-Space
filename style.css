@@ -1,0 +1,236 @@
+/* 
+Theme : Integrated Project 
+Auther : AJA^2
+Version : 1.0
+*/
+/* Reset ============================== */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Typography ========================= */
+body {
+  font-family: charter, georgia, serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+/* Links ============================== */
+a {
+  text-decoration: none;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #D95525;
+}
+a:visited {
+  color: #D95525;
+}
+a:hover {
+  color: #F5D9D3;
+}
+
+/* Media ==============================*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons ======================= */
+button {
+  border-radius: 2px;
+  border: 1px solid #EE5922;
+}
+
+button.weird {
+  border: 5px solid papayawhip;
+}
+
+button.ultra-round {
+  border-radius: 4px;
+}
+
+/*Navigation ==========================*/
+nav {
+  padding: 0.25rem;
+  flex-grow: 1;
+}
+nav ul {
+  letter-spacing: normal;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  font-family: DM Sans;
+  text-align: center;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: #D95525;
+}
+
+/* header footer ================= */
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Content ======================= */
+.main-content {
+  display: grid;
+  grid-gap: 1rem;
+  /*
+      @media screen and (min-width:640px) {
+          grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (min-width:840px) {
+          grid-template-columns: repeat(3, 1fr);
+      }
+  */
+}
+@media screen and (min-width: 1000px) {
+  .main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-content img {
+    width: 100%;
+    margin-bottom: -80px;
+  }
+  .main-content .form {
+    padding: 1rem 20%;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .main-content .form h1 {
+    color: #D95525;
+  }
+  .main-content .form .button {
+    background-color: #D95525;
+    color: #F8F9FA;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  .main-content .form .button:hover {
+    background-color: #EE5922;
+    color: #F8F9FA;
+  }
+  .main-content .form input {
+    text-align: center;
+    border: none;
+    background-color: #F5D9D3;
+    color: #EE5922;
+  }
+  .main-content .form h1,
+  .main-content .form input,
+  .main-content .form .button {
+    width: 100%;
+    display: block;
+    margin-top: 3rem;
+  }
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+/* Acessibility ======================= */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */
