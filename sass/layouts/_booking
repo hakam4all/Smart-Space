@@ -1,0 +1,4 @@
+.booking-content{
+display:grid;
+
+}
