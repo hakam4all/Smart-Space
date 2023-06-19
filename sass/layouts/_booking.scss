@@ -25,6 +25,55 @@ p:hover {
     background-color: rgba(255, 105, 180, 0.5);
 
 }
+.show-section {
+    visibility: hidden;
+    margin-bottom: -3rem;
+}
+.option {
+    background-color: black;
+    color: white;
+    margin: .5rem auto;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    padding: .25rem .1rem;
+}
+
+#booking1 {
+        align-items: center;
+    font-size: x-large;
+    margin: .5rem auto;
+    padding: .25rem .1rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+
+#booking1 label,
+#booking1 input {
+    display: inline;
+    margin-top: .25rem;
+}
+
+#next1,
+#next2,
+#next3,
+#next4 {
+    grid-column: span 2;
+    background-color: black;
+    color: white;
+    margin: .5rem auto;
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    padding: .25rem .1rem;
+}
+
+
+
 
 #s1 {
     grid-row: 7/8;
