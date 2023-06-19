@@ -246,11 +246,6 @@ p:hover {
   background-color: rgba(255, 105, 180, 0.5);
 }
 
-.show-section {
-  visibility: hidden;
-  margin-bottom: -3rem;
-}
-
 .option {
   background-color: black;
   color: white;
@@ -262,7 +257,9 @@ p:hover {
   padding: 0.25rem 0.1rem;
 }
 
-#booking1 {
+#booking1,
+#booking2,
+#booking4 {
   align-items: center;
   font-size: x-large;
   margin: 0.5rem auto;
@@ -273,7 +270,11 @@ p:hover {
 }
 
 #booking1 label,
-#booking1 input {
+#booking1 input,
+#booking2 label,
+#booking2 input,
+#booking4 label,
+#booking4 input {
   display: inline;
   margin-top: 0.25rem;
 }
