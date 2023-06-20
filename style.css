@@ -223,19 +223,6 @@ footer {
 }
 
 /* Booking Style ================= */
-.booking-content {
-  border: 1px solid black;
-  margin: auto auto;
-  max-width: 1600px;
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(23, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  background-image: url(../../Images/Layout/w.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -270,8 +257,7 @@ p:hover,
 }
 
 #booking1,
-#booking2,
-#timing {
+#booking2 {
   align-items: center;
   font-size: x-large;
   margin: 0.5rem auto;
@@ -279,6 +265,17 @@ p:hover,
   width: 80%;
   display: grid;
   grid-template-columns: 40% 60%;
+}
+
+#timing {
+  align-items: center;
+  font-size: x-large;
+  margin: 0.5rem auto;
+  padding: 0.25rem 0.1rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
 }
 
 #filters form {
@@ -318,7 +315,7 @@ p:hover,
 #filters h2,
 #timing h2 {
   margin-top: 0.5rem;
-  grid-column: span 2;
+  grid-column: 1/-1;
   text-align: center;
   font-size: xx-large;
 }
@@ -340,6 +337,20 @@ p:hover,
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+}
+
+/* Maps */
+.booking-content {
+  border: 1px solid black;
+  margin: auto auto;
+  max-width: 1600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(23, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-image: url(../../Images/Layout/w.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #s1 {
@@ -450,6 +461,175 @@ p:hover,
 #s22 {
   grid-row: 9/10;
   grid-column: 11/12;
+}
+
+#s23 {
+  grid-row: 8/9;
+  grid-column: 10/11;
+}
+
+#s24 {
+  grid-row: 8/9;
+  grid-column: 11/12;
+}
+
+#s25,
+#s26,
+#s27,
+#s28 {
+  grid-row: 7/8;
+  grid-column: 12/13;
+}
+
+#s29,
+#s30,
+#s31,
+#s32,
+#s33,
+#s34,
+#s35 {
+  grid-row: 6/8;
+  grid-column: 13/14;
+}
+
+#s36 {
+  grid-row: 9/10;
+  grid-column: 15/16;
+}
+
+#s37 {
+  grid-row: 9/10;
+  grid-column: 16/17;
+}
+
+#s38 {
+  grid-row: 10/11;
+  grid-column: 14/15;
+}
+
+#s39 {
+  grid-row: 10/11;
+  grid-column: 15/16;
+}
+
+#s40 {
+  grid-row: 10/11;
+  grid-column: 16/17;
+}
+
+#s41 {
+  grid-row: 8/9;
+  grid-column: 17/18;
+}
+
+#s43 {
+  grid-row: 7/8;
+  grid-column: 19/20;
+}
+
+#s42 {
+  grid-row: 8/9;
+  grid-column: 18/19;
+}
+
+#s44 {
+  grid-row: 8/9;
+  grid-column: 19/20;
+}
+
+#s53 {
+  grid-row: 8/9;
+  grid-column: 20/21;
+}
+
+#s54 {
+  grid-row: 8/9;
+  grid-column: 21/22;
+}
+
+#s45 {
+  grid-row: 10/11;
+  grid-column: 17/18;
+}
+
+#s46 {
+  grid-row: 10/11;
+  grid-column: 18/19;
+}
+
+#s47 {
+  grid-row: 10/11;
+  grid-column: 19/20;
+}
+
+#s48 {
+  grid-row: 9/10;
+  grid-column: 19/20;
+}
+
+#s52 {
+  grid-row: 9/10;
+  grid-column: 21/22;
+}
+
+#s49 {
+  grid-row: 6/7;
+  grid-column: 21/22;
+}
+
+#s50 {
+  grid-row: 7/8;
+  grid-column: 21/22;
+}
+
+#s51 {
+  grid-row: 6/7;
+  grid-column: 22/23;
+}
+
+#s55 {
+  grid-row: 10/11;
+  grid-column: 20/21;
+}
+
+#s56 {
+  grid-row: 10/11;
+  grid-column: 21/22;
+}
+
+#s57 {
+  grid-row: 10/11;
+  grid-column: 22/23;
+}
+
+#s58 {
+  grid-row: 10/11;
+  grid-column: 23/24;
+}
+
+#s59 {
+  grid-row: 9/10;
+  grid-column: 23/24;
+}
+
+#s60 {
+  grid-row: 8/9;
+  grid-column: 23/24;
+}
+
+#s61 {
+  grid-row: 7/8;
+  grid-column: 23/24;
+}
+
+#s62 {
+  grid-row: 6/7;
+  grid-column: 23/24;
+}
+
+#s63 {
+  grid-row: 7/8;
+  grid-column: 22/23;
 }
 
 /* Acessibility ======================= */
