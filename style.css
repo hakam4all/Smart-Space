@@ -231,7 +231,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(23, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  background-image: url(../../Images/Layout/1\ -\ Copy.jpg);
   background-image: url(../../Images/Layout/w.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -242,7 +241,8 @@ img {
   height: auto;
 }
 
-p:hover {
+p:hover,
+#next1:hover {
   background-color: rgba(255, 105, 180, 0.5);
 }
 
@@ -250,48 +250,96 @@ p:hover {
   background-color: black;
   color: white;
   margin: 0.5rem auto;
-  width: 60%;
+  width: 90%;
   text-align: center;
   align-items: center;
   font-size: xx-large;
   padding: 0.25rem 0.1rem;
 }
 
+#stepOne {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+}
+
+#stepOne h2,
+.buttons {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
 #booking1,
 #booking2,
-#booking4 {
+#timing {
+  align-items: center;
+  font-size: x-large;
+  margin: 0.5rem auto;
+  padding: 0.25rem 0.1rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+#filters form {
   align-items: center;
   font-size: x-large;
   margin: 0.5rem auto;
   padding: 0.25rem 0.1rem;
   width: 60%;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 80% 20%;
 }
 
 #booking1 label,
 #booking1 input,
 #booking2 label,
 #booking2 input,
-#booking4 label,
-#booking4 input {
+#booking2 select {
   display: inline;
   margin-top: 0.25rem;
 }
 
 #next1,
 #next2,
-#next3,
-#next4 {
+#cancel1,
+#cancel2 {
   grid-column: span 2;
   background-color: black;
   color: white;
   margin: 0.5rem auto;
-  width: 25%;
+  width: 20%;
   text-align: center;
   align-items: center;
   font-size: xx-large;
   padding: 0.25rem 0.1rem;
+}
+
+#filters h2,
+#timing h2 {
+  margin-top: 0.5rem;
+  grid-column: span 2;
+  text-align: center;
+  font-size: xx-large;
+}
+
+#secondBooking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.bookingFilter p {
+  display: inline;
+  padding: 0;
+}
+
+.bookingFilter {
+  border: 1px black solid;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
 #s1 {

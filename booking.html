@@ -23,101 +23,158 @@
     </header>
     <main>
         <div class="option" id="step1">
-            <p>Step 1 - Basic Information</p>
+            <p>Step 1</p>
         </div>
-        <Section id="booking1">
-            <label for="people">No. of People</label>
-            <input type="number" id="people" min="1" max="8">
-            <label for="bookDate">Date</label>
-            <input type="date" id="bookDate">
-            <button id="next1">Next</button>
-        </Section>
+
+        <div id="stepOne">
+            <section id="booking1">
+                <h2>Basic Information</h2>
+                <label for="people">No. of People</label>
+                <input type="number" id="people" min="1" max="8">
+                <label for="bookDate">Date</label>
+                <input type="date" id="bookDate">
+            </section>
+            <section id="booking2">
+                <h2>Space Information</h2>
+                <label for="building">Building</label>
+                <select name="building" id="building">
+                    <option value="Library Building">Library Building</option>
+                    <option value="A">A Building</option>
+                    <option value="B">B Building</option>
+                    <option value="T">T Building</option>
+                </select>
+                <label for="level">Level</label>
+                <select name="level" id="level">
+                    <option value="l1">Level 1</option>
+                    <option value="l2">Level 2</option>
+                    <option value="l3">Level 3</option>
+                </select>
+            </section>
+            <section class="buttons">
+                <button id="cancel1">Cancel</button>
+                <button id="next1">Next</button>
+            </section>
+
+        </div>
 
 
         <div class="option" id="step2">
-            <p>Step 2 - Building </p>
+            <p>Step 2</p>
         </div>
-        <Section id="booking2">
-            <label for="people2">No. of People</label>
-            <input type="number" id="people2" min="1" max="8">
-            <label for="bookDate2">Date</label>
-            <input type="date" id="bookDate2">
-            <button id="next2">Next</button>
-        </Section>
+        <div id="secondBooking">
+            <section id="filters">
+                <h2>Filters</h2>
+                <form action="get">
+                    <label for="filter1">Monitor</label>
+                    <Section class="bookingFilter" id="filter1">
+                        <p class="neg">-</p>
+                        <p class="counter">0</p>
+                        <p class="pos">+</p>
+                    </Section>
+                </form>
+                <form action="get">
+                    <label for="filter2">Projector</label>
+                    <Section class="bookingFilter" id="filter2">
+                        <p class="neg">-</p>
+                        <p class="counter">0</p>
+                        <p class="pos">+</p>
+                    </Section>
+                </form>
+                <form action="get">
+                    <label for="filter3">Power Outlet</label>
+                    <Section class="bookingFilter" id="filter3">
+                        <p class="neg">-</p>
+                        <p class="counter">0</p>
+                        <p class="pos">+</p>
+                    </Section>
+                </form>
+                <form action="get">
+                    <label for="filter4">Table</label>
+                    <Section class="bookingFilter" id="filter4">
+                        <p class="neg">-</p>
+                        <p class="counter">0</p>
+                        <p class="pos">+</p>
+                    </Section>
+                </form>
+                <form action="get">
+                    <label for="filter5">Chair</label>
+                    <Section class="bookingFilter" id="filter5">
+                        <p class="neg">-</p>
+                        <p class="counter">0</p>
+                        <p class="pos">+</p>
+                    </Section>
+                </form>
+            </section>
 
-        <div class="option" id="step3">
-            <p>Step 3 - Avaliable Selection</p>
-        </div>
-        <section id="booking3">
-            <section class="booking-content" >
-                <p id="s1"></p>
-                <p id="s2"></p>
-                <p id="s3"></p>
-                <p id="s4"></p>
-                <p id="s5"></p>
-                <p id="s6"></p>
-                <p id="s7"></p>
-                <p id="s8"></p>
-                <p id="s9"></p>
-                <p id="s10"></p>
-                <p id="s11"></p>
-                <p id="s12"></p>
-                <p id="s13"></p>
-                <p id="s14"></p>
-                <p id="s15"></p>
-                <p id="s16"></p>
-                <p id="s17"></p>
-                <p id="s18"></p>
-                <p id="s19"></p>
-                <p id="s20"></p>
-                <p id="s21"></p>
-                <p id="s22"></p>
-                <p id="s23"></p>
-                <p id="s24"></p>
-                <p id="s25"></p>
-                <p id="s26"></p>
-                <p id="s27"></p>
-                <p id="s28"></p>
-                <p id="s29"></p>
-                <p id="s30"></p>
-                <p id="s31"></p>
-                <p id="s32"></p>
-                <p id="s33"></p>
-                <p id="s34"></p>
-                <p id="s35"></p>
-                <p id="s36"></p>
-                <p id="s37"></p>
-                <p id="s38"></p>
-                <p id="s39"></p>
-                <p id="s40"></p>
-                <p id="s41"></p>
-                <p id="s42"></p>
-                <p id="s43"></p>
-                <p id="s44"></p>
-                <p id="s45"></p>
-                <p id="s46"></p>
-                <p id="s47"></p>
-                <p id="s48"></p>
-                <p id="s49"></p>
-                <p id="s50"></p>
-                <p id="s51"></p>
-                <p id="s52"></p>
-                <p id="s53"></p>
-                <p id="s54"></p>
+            <section id="timing">
+                <h2>Booking Time</h2>
 
             </section>
-            <button id="next3">Next</button>
-        </section>
-        <div class="option" id="step4">
-            <p>Step 4 - Confirmation</p>
+            <section class="buttons">
+                <button id="cancel2">Cancel</button>
+                <button id="next2">Next</button>
+            </section>
+
+
         </div>
-        <Section id="booking4">
-            <label for="people4">No. of People</label>
-            <input type="number" id="people4" min="1" max="8">
-            <label for="bookDate4">Date</label>
-            <input type="date" id="bookDate4">
-            <button id="next4">Next</button>
-        </Section>
+
+        <section class="booking-content">
+            <p id="s1"></p>
+            <p id="s2"></p>
+            <p id="s3"></p>
+            <p id="s4"></p>
+            <p id="s5"></p>
+            <p id="s6"></p>
+            <p id="s7"></p>
+            <p id="s8"></p>
+            <p id="s9"></p>
+            <p id="s10"></p>
+            <p id="s11"></p>
+            <p id="s12"></p>
+            <p id="s13"></p>
+            <p id="s14"></p>
+            <p id="s15"></p>
+            <p id="s16"></p>
+            <p id="s17"></p>
+            <p id="s18"></p>
+            <p id="s19"></p>
+            <p id="s20"></p>
+            <p id="s21"></p>
+            <p id="s22"></p>
+            <p id="s23"></p>
+            <p id="s24"></p>
+            <p id="s25"></p>
+            <p id="s26"></p>
+            <p id="s27"></p>
+            <p id="s28"></p>
+            <p id="s29"></p>
+            <p id="s30"></p>
+            <p id="s31"></p>
+            <p id="s32"></p>
+            <p id="s33"></p>
+            <p id="s34"></p>
+            <p id="s35"></p>
+            <p id="s36"></p>
+            <p id="s37"></p>
+            <p id="s38"></p>
+            <p id="s39"></p>
+            <p id="s40"></p>
+            <p id="s41"></p>
+            <p id="s42"></p>
+            <p id="s43"></p>
+            <p id="s44"></p>
+            <p id="s45"></p>
+            <p id="s46"></p>
+            <p id="s47"></p>
+            <p id="s48"></p>
+            <p id="s49"></p>
+            <p id="s50"></p>
+            <p id="s51"></p>
+            <p id="s52"></p>
+            <p id="s53"></p>
+            <p id="s54"></p>
+        </section>
+    
     </main>
     <footer>
         <h2>2023 (C) Smart@Space</h2>
